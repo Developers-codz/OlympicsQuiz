@@ -3,6 +3,8 @@ var chalk = require('chalk');
 var score = 0;
 console.log(chalk.bold.yellowBright('Welcome To Tokyo Olympics Quiz Game'));
 console.log(chalk.bold.yellowBright("------------------------------------"));
+var username = readlineSync.question("Please enter your name: ")
+console.log("Welcome " + chalk.yellowBright(username))
 
 var quizArr = [
 {
@@ -20,6 +22,11 @@ var quizArr = [
 {
   question:'How many medal do India have?  \na. 7 \nb. 55 \nc. 2 \n',
   answer:'a',
+},
+{
+  question:"What do the five rings on the Olympics symbol represents? \na.The five ocean \nb.The five continents \nc.The five planets",
+  answer:"b"
+
 },
 ];
 
